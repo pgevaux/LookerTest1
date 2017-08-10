@@ -20,6 +20,7 @@ view: users {
   dimension: country {
     type: string
     sql: ${TABLE}.country ;;
+    drill_fields: [state, city]
   }
 
   dimension_group: created {
@@ -59,6 +60,7 @@ view: users {
   dimension: state {
     type: string
     sql: ${TABLE}.state ;;
+    drill_fields: [city, zip]
   }
 
   dimension: zip {

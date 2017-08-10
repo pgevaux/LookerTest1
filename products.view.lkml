@@ -10,6 +10,12 @@ view: products {
   dimension: brand {
     type: string
     sql: ${TABLE}.brand ;;
+    link: {
+      label: "Go to Website"
+      url: "http://www.{{ value }}.com"
+
+
+    }
   }
 
   dimension: category {
