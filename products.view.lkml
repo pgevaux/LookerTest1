@@ -13,8 +13,6 @@ view: products {
     link: {
       label: "Go to Website"
       url: "http://www.{{ value }}.com"
-
-
     }
   }
 
